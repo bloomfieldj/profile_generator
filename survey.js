@@ -29,6 +29,7 @@ const ask = function(callback = saveAnswer) {
     const paragraph = `I go by ${profile.alias}! My fav activity is ${profile.activity}! While ${profile.activity}, I usually listen to ${profile.soundtrack}! My fav meal is ${profile.meal}! My fav food during ${profile.meal} is ${profile.food}! My fav sport is ${profile.sport}! My superpower is ${profile.superpower}!`;
     console.log(paragraph);
     rl.close();
+    return paragraph;
   }
   rl.question(allQuestions[questions[i]], (answer) => {
     
